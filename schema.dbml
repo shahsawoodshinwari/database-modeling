@@ -2,3 +2,12 @@ Project "Database Modeling Course" {
   database_type: 'PostgreSQL'
   Note: 'This project focuses on designing and implementing a relational database schema using PostgreSQL.'
 }
+
+Table Incorrect.Apply {
+  SSN int [pk, note: 'Student SSN']
+  sName varchar [note: 'Student Name']
+  cName varchar [note: 'College Name']
+  HS varchar [note: 'High School Name']
+  HScity varchar [note: 'High School City']
+  hobby varchar [note: 'Student Hobby']
+}
