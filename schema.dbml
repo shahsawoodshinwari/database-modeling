@@ -1,0 +1,4 @@
+Project "Database Modeling Course" {
+  database_type: 'PostgreSQL'
+  Note: 'This project focuses on designing and implementing a relational database schema using PostgreSQL.'
+}
