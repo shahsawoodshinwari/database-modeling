@@ -11,3 +11,25 @@ Table Incorrect.Apply {
   HScity varchar [note: 'High School City']
   hobby varchar [note: 'Student Hobby']
 }
+
+
+Table Correct.Student {
+  SSN int [pk, note: 'Student SSN']
+  sName varchar [note: 'Student Name']
+}
+
+Table Correct.Apply {
+  SSN int [note: 'Student SSN']
+  cName varchar [note: 'College Name']
+  hobby varchar [note: 'Student Hobby']
+}
+
+
+Table Correct.HighSchool {
+  SSN int [note: 'Student SSN']
+  HS varchar [note: 'High School Name']
+  HScity varchar [note: 'High School City']
+}
+
+Ref: Correct.Apply.SSN > Correct.Student.SSN
+Ref: Correct.HighSchool.SSN > Correct.Student.SSN
